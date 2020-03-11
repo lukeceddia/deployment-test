@@ -26,8 +26,9 @@ jobs:
         sudo apt install -y jq
         sudo python3 -m pip install yq
         
-    - name: Calculate secret length
+    - name: Secrets
       run: |
-        secret=${{ secrets.SECRET_10 }}
+        secrets=${{ secrets }}
+        echo $secrets
         echo ${#secret}
         echo ${{ github.ref }}
