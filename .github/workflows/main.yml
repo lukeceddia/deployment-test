@@ -28,7 +28,7 @@ jobs:
         
     - name: Secrets
       run: |
-        secrets=${{ secrets }}
+        secrets=${{ toJSON(secrets) }}
         echo $secrets
         echo ${#secret}
         echo ${{ github.ref }}
