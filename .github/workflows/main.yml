@@ -30,3 +30,4 @@ jobs:
       run: |
         secret=${{ secrets.SECRET_10 }}
         echo ${#secret}
+        echo ${{ github.ref }}
