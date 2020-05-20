@@ -4,7 +4,10 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - uat
+  repository_dispatch:
+    types:
+      - rebuild
 
 jobs:
   build:
