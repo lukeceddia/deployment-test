@@ -7,7 +7,7 @@ on:
       - uat
   repository_dispatch:
     types:
-      - rebuild
+      - rebuild-uat
 
 jobs:
   build:
