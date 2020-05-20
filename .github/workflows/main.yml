@@ -16,3 +16,6 @@ jobs:
     steps:
       - name: Show date
         run: date
+
+      - name: Show content
+        run: cat content
