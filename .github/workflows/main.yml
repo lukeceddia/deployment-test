@@ -5,8 +5,7 @@ on:
   push:
     branches:
       - uat
-  repository_dispatch:
-    types:
+    tags:
       - rebuild-uat
 
 jobs:
